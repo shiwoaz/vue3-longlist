@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib  --k-progress main ./src/components/longList/index.ts"
   },
   "dependencies": {
     "vue": "^3.0.0"
@@ -36,6 +37,14 @@
       "ecmaVersion": 2020
     },
     "rules": {}
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiwoaz/vue3-longlist.git"
+  },
+  "author": "ismeOvo <1219353840@qq.com>",
+  "bugs": {
+    "url": "https://github.com/shiwoaz/vue3-longlist/issues"
   },
   "browserslist": [
     "> 1%",
