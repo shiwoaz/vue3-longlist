@@ -1,5 +1,14 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("vue"));
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["index"] = factory(require("vue"));
+	else
+		root["index"] = factory(root["Vue"]);
+})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8bbf__) {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -175,7 +184,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /***/ "8bbf":
 /***/ (function(module, exports) {
 
-module.exports = require("vue");
+module.exports = __WEBPACK_EXTERNAL_MODULE__8bbf__;
 
 /***/ }),
 
@@ -213,12 +222,12 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/vue-loader-v16/dist/templateLoader.js??ref--5!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/components/longList/src/index.vue?vue&type=template&id=541404fe&bindings={}
+// CONCATENATED MODULE: ./node_modules/vue-loader-v16/dist/templateLoader.js??ref--5!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/longList/src/index.vue?vue&type=template&id=5eb2b987&bindings={}
 
 
 const _hoisted_1 = { class: "container" }
 
-function srcvue_type_template_id_541404fe_bindings_render(_ctx, _cache, $props, $setup, $data, $options) {
+function srcvue_type_template_id_5eb2b987_bindings_render(_ctx, _cache, $props, $setup, $data, $options) {
   return (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", _hoisted_1, [
     (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])(_ctx.data, (item, index) => {
       return (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", {
@@ -233,9 +242,9 @@ function srcvue_type_template_id_541404fe_bindings_render(_ctx, _cache, $props, 
     }), 128 /* KEYED_FRAGMENT */))
   ]))
 }
-// CONCATENATED MODULE: ./src/components/longList/src/index.vue?vue&type=template&id=541404fe&bindings={}
+// CONCATENATED MODULE: ./src/longList/src/index.vue?vue&type=template&id=5eb2b987&bindings={}
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/ts-loader??ref--13-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/components/longList/src/index.vue?vue&type=script&lang=ts
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/ts-loader??ref--13-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/longList/src/index.vue?vue&type=script&lang=ts
 
 
 /* harmony default export */ var srcvue_type_script_lang_ts = (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["defineComponent"])({
@@ -287,16 +296,16 @@ function srcvue_type_template_id_541404fe_bindings_render(_ctx, _cache, $props, 
     },
 }));
 
-// CONCATENATED MODULE: ./src/components/longList/src/index.vue?vue&type=script&lang=ts
+// CONCATENATED MODULE: ./src/longList/src/index.vue?vue&type=script&lang=ts
  
-// CONCATENATED MODULE: ./src/components/longList/src/index.vue
+// CONCATENATED MODULE: ./src/longList/src/index.vue
 
 
 
-srcvue_type_script_lang_ts.render = srcvue_type_template_id_541404fe_bindings_render
+srcvue_type_script_lang_ts.render = srcvue_type_template_id_5eb2b987_bindings_render
 
 /* harmony default export */ var longList_src = (srcvue_type_script_lang_ts);
-// CONCATENATED MODULE: ./src/components/longList/index.ts
+// CONCATENATED MODULE: ./src/longList/index.ts
 
 var p = {
     install: function (vue) {
@@ -315,4 +324,4 @@ var p = {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=vue3-longlist.common.js.map
+});

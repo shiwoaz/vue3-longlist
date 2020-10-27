@@ -1,16 +1,19 @@
 {
   "name": "vue3-longlist",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.6",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "package": "vue-cli-service build --target lib  --k-progress main ./src/components/longList/index.ts"
+    "package": "vue-cli-service build --target lib  --name index  ./src/longList/index.ts "
   },
   "dependencies": {
     "vue": "^3.0.0"
   },
+  "license": "MIT",
+  "typings": "./src/longList/src/index.d.ts",
+  "main": "dist/index.common.js",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
